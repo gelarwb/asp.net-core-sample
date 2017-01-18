@@ -42,7 +42,13 @@ namespace SampleBackendAPI
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
 
-            services.AddCors();
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
+
             services.AddMvc()
                 .AddJsonOptions(options =>
             {
@@ -61,7 +67,7 @@ namespace SampleBackendAPI
             app.UseApplicationInsightsRequestTelemetry();
 
             app.UseApplicationInsightsExceptionTelemetry();
-            app.UseCors("AllowAll");
+            app.UseCors("MyPolicy");
             app.UseMvc();
         }
     }

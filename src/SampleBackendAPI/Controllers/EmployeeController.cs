@@ -19,7 +19,7 @@ namespace SampleBackendAPI.Controllers
         public IEmployeeRepository EmpItems { get; set; }
 
         [HttpGet]
-        [EnableCors("AllowSpecificOrigin")]
+        [EnableCors("MyPolicy")]
         public IEnumerable<Employee> GetAll()
         {
             return EmpItems.GetAll();
@@ -39,6 +39,7 @@ namespace SampleBackendAPI.Controllers
         }
 
         [HttpPost]
+        [EnableCors("MyPolicy")]
         public IActionResult Create([FromBody] Employee item)
         {
             if (item == null)

@@ -8,7 +8,7 @@ using SampleBackendAPI.Models;
 namespace SampleBackendAPI.Migrations
 {
     [DbContext(typeof(EmployeeContext))]
-    [Migration("20170112012520_MyFirstMigration")]
+    [Migration("20170118004305_MyFirstMigration")]
     partial class MyFirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

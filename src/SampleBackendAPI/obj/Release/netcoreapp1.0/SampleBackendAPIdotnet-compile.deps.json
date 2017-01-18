@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0/",
-    "signature": "435c64893d1c9e63d7afd602926890ac86bf67de"
+    "signature": "12275c56e17185f92c281a90cb48ee74cadcc593"
   },
   "compilationOptions": {
     "defines": [
@@ -33,7 +33,8 @@
           "Microsoft.EntityFrameworkCore.Design": "1.1.0",
           "xunit": "2.2.0-beta4-build3444",
           "Newtonsoft.Json": "9.0.2-beta1",
-          "Microsoft.AspNetCore.Cors": "1.1.0"
+          "Microsoft.AspNetCore.Cors": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Tools": "1.1.0-preview4-final"
         },
         "compile": {
           "SampleBackendAPI.dll": {}
@@ -736,6 +737,11 @@
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/1.1.0-preview4-final": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "1.1.0"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/1.1.0": {
@@ -2837,7 +2843,8 @@
           "Microsoft.EntityFrameworkCore.Design": "1.1.0",
           "xunit": "2.2.0-beta4-build3444",
           "Newtonsoft.Json": "9.0.2-beta1",
-          "Microsoft.AspNetCore.Cors": "1.1.0"
+          "Microsoft.AspNetCore.Cors": "1.1.0",
+          "Microsoft.EntityFrameworkCore.Tools": "1.1.0-preview4-final"
         },
         "runtime": {
           "SampleBackendAPI.dll": {}
@@ -3540,6 +3547,11 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/1.1.0-preview4-final": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "1.1.0"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/1.1.0": {
@@ -5762,6 +5774,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-3Cg6izj0vvFBG4qenxeUMmFvhdW6bUBH9OqqK1s+f7IvEpgRuxz5vb1e5H15PodzxUziXOLG6je69JMC0Axuig=="
+    },
+    "Microsoft.EntityFrameworkCore.Tools/1.1.0-preview4-final": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n7g5JB4YxLYCl32XCmjXEHDF/9J/DSeNYGjxGAzG1xUi/IXOCWd6T3XyEnDXsub7iFDvpB2VgUlh6wHDqmTZgA=="
     },
     "Microsoft.Extensions.Caching.Abstractions/1.1.0": {
       "type": "package",
